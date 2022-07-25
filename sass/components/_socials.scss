@@ -1,0 +1,48 @@
+.socials {
+    @extend %flex--centered;
+
+    &__item:not(:first-child) {
+        margin-left: 10px;
+    }
+    
+    &__link {
+        @extend %inline-flex--centered;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    
+        fill: var(--footer-white-text-color);
+        background-color: var(--footer-socials-bcg-color);
+    
+        transition-property: background-color;
+        transition-timing-function: var(--timing-function);
+        transition-duration: var(--duration);
+    }
+    
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--accent-color);
+    }
+    
+    &__link--grey {
+        color: var(--team-member-socials-color);
+    
+        transition-property: color,background-color;
+        transition-timing-function: var(--timing-function);
+        transition-duration: var(--duration);
+    }
+    
+    &__link--grey:hover,
+    &__link--grey:focus {
+        color: var(--team-member-socials-accent-color);
+    }
+    
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    &__icon--currentcolor {
+        fill: currentColor;
+    }
+}

@@ -1,0 +1,17 @@
+.page-header {
+    display: flex;
+
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+}
+
+    &__site-nav {
+        margin-left: 93px;
+}
+
+    &__contacts {
+        margin-left: auto;
+    }
+}

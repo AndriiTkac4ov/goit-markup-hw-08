@@ -1,0 +1,24 @@
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    text-decoration: none;
+    color: var(--footer-white-text-color);
+}
+
+.address__link--accent {
+    color: var(--address-text-color);
+
+    transition-property: color;
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--duration);
+}
+
+.address__link--accent:hover,
+.address__link--accent:focus {
+    color: var(--accent-color);
+}

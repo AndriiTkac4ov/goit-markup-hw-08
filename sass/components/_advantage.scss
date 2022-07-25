@@ -1,0 +1,37 @@
+.advantage {
+    width: 270px;
+
+
+    & + & {
+    margin-left: 30px;
+    }
+
+    &__picture {
+        @extend %flex--centered;
+        height: 120px;
+        margin-bottom: 30px;
+
+        background-color: var(--team-bcg-color);
+        border-radius: 4px;
+    }
+
+    &__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--title-text-color);
+    }
+
+    &__desc {
+        margin-bottom: 0;
+
+        line-height: 1.714;
+    }
+}

@@ -1,0 +1,55 @@
+.button {
+    padding: 10px 32px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--button-text-color);
+    background-color: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--duration);
+
+    &--standart-sizes {
+        width: 200px;
+        height: 50px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-accent-color);
+    }
+}
+
+
+.button-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    @extend %flex--centered;
+
+    background-color: transparent;
+    fill: var(--logo-black-text-color);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    transition-property: fill;
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--duration);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}

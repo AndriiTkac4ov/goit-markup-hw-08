@@ -1,0 +1,27 @@
+.client {
+    @extend %inline-flex--centered;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid var(--client-color);
+    color: var(--client-color);
+
+    transition-property: color, border-color;
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--duration);
+    
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+
+    &__icon--standart-height {
+        height: 52px;
+    }
+}

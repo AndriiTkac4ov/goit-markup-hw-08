@@ -1,0 +1,8 @@
+.team {
+    background-color: var(--team-bcg-color);
+
+
+    &__list {
+        display: flex;
+    }
+}

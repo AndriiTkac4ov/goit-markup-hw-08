@@ -1,0 +1,44 @@
+:root {
+    /* text colors */
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --header-border-color: #ECECEC;
+    --logo-text-color: #2196F3;
+    --logo-black-text-color: #000000;
+    --logo-white-text-color: #FFFFFF;
+    --hero-text-color: #FFFFFF;
+    --button-text-color: #FFFFFF;
+    --title-text-color: #212121;
+    --activity-item-title-color: #FFFFFF;
+    --team-member-socials-color: #AFB1B8;
+    --team-member-socials-accent-color: #FFFFFF;
+    --client-color: #AFB1B8;
+    --footer-white-text-color: #FFFFFF;
+    --address-text-color: rgba(255, 255, 255, 0.6);
+    --footer-input-color: #FFFFFF;
+    --footer-input-placeholder-color: rgba(255, 255, 255, 0.6);
+    --footer-input-border-color: rgba(255, 255, 255, 0.3);
+    --form-input-border-color: rgba(33, 33, 33, 0.2);
+    --form-input-placeholder-color: rgba(117, 117, 117, 0.5);
+    --filter-accent-color: #FFFFFF;
+    --portfolio-overlay-text-color: #FFFFFF;
+
+    /* background colors */
+    --primary-bcg-color: #FFFFFF;
+    --hero-bcg-color: #2F303A;
+    --button-color: #2196F3;
+    --button-accent-color: #188CE8;
+    --activity-item-bcg-color: rgba(47, 48, 58, 0.8);
+    --team-bcg-color: #F5F4FA;
+    --team-member-bcg-color: #FFFFFF;
+    --footer-socials-bcg-color: rgba(255, 255, 255, 0.1);
+    --portfolio-filter-bcg-color: #F5F4FA;
+    --portfolio-filter-accent-color: #2196F3;
+    --portfolio-overlay-bcg-color: rgba(33, 150, 243, 0.9);
+    --portfolio-works-border-color: #EEEEEE;
+    --hero-modal-backdrop-color: rgba(0, 0, 0, 0.2);
+
+    /* transition */
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --duration: 250ms;
+}

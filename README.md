@@ -1,2 +1,2 @@
-# goit-markup-hw-07
-Web Studio (CSS)
+# goit-markup-hw-08
+Web Studio

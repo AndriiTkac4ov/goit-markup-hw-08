@@ -254,11 +254,18 @@ fieldset {
 }
 
 .container {
+  min-width: 320px;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.container.responsive {
+  max-width: 1200px;
+}
+.container.adaptive {
+  max-width: 320px;
 }
 
 .button {
@@ -839,7 +846,13 @@ fieldset {
 }
 
 .activities {
+  display: none;
   padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .activities {
+    display: block;
+  }
 }
 .activities__list {
   display: -webkit-box;

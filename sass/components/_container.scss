@@ -1,28 +1,18 @@
 .container {
-    min-width: 320px;
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
-    &.responsive {
-        max-width: 1200px;
+    @include for-mobile-up {
+        width: 480px;
     }
-
-    &.adaptive {
-        max-width: 320px;
+    
+    @include for-tablet-up {
+        width: 768px;
+        }
+    
+    @include for-desktop-up {
+        width: 1200px;
     }
-}
-
-@include for-mobile-up {
-    max-width: 480px;
-}
-
-@include for-tablet-up {
-    max-width: 768px;
-}
-
-@include for-desktop-up {
-    max-width: 1200px;
 }

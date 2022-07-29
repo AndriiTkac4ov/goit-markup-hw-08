@@ -1,10 +1,6 @@
 .advantage {
     width: 450px;
 
-    &+& {
-        margin-top: 30px;
-    };
-
     &__picture {
         @extend %flex--centered;
         height: 120px;
@@ -34,24 +30,21 @@
         line-height: 1.714;
     }
 
+    @media screen and (max-width: 767px) {
+        &+& {
+            margin-top: 30px;
+        };
+    }
+    
     @include for-tablet-up {
-        @media screen and (min-width: 768px) {
-            width: 354px;
-            
-            &+& {
-                margin-top: 0;
-            };
-        }
+        flex-basis: calc((100% - 30px)/2);
     }
     
     @include for-desktop-up {
-        @media screen and (min-width: 1200px) {
-            width: 270px;
+        flex-basis: calc((100% - 3*30px)/4);
 
-            &+& {
-                margin-top: 0;
-                margin-left: 30px;
-            };
-        }
+        &+& {
+            margin-left: 30px;
+        };
     }
 }

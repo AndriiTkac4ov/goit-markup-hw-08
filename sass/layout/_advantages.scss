@@ -1,19 +1,11 @@
 .advantages__list {
     @include for-tablet-up {
-        @media screen and (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
-            row-gap: 57px;
-            column-gap: 30px;
-        }
+        display: flex;
     }
-    
-    @include for-desktop-up {
-        @media screen and (min-width: 1200px) {
-            display: flex;
-            flex-wrap: nowrap;
-            row-gap: 0;
-            column-gap: 0;
-        }
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        row-gap: 57px;
+        column-gap: 30px;
     }
 }

@@ -503,26 +503,6 @@ fieldset {
   margin-bottom: 0;
   line-height: 1.714;
 }
-@media screen and (max-width: 767px) {
-  .advantage + .advantage {
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .advantage {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantage {
-    -ms-flex-preferred-size: calc((100% - 90px) / 4);
-        flex-basis: calc((100% - 90px) / 4);
-  }
-  .advantage + .advantage {
-    margin-left: 30px;
-  }
-}
 
 .activity-card {
   position: relative;
@@ -567,26 +547,6 @@ fieldset {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-@media screen and (max-width: 767px) {
-  .team-member + .team-member {
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team-member {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team-member {
-    -ms-flex-preferred-size: calc((100% - 90px) / 4);
-        flex-basis: calc((100% - 90px) / 4);
-  }
-  .team-member + .team-member {
-    margin-left: 30px;
-  }
 }
 
 .socials__item:not(:first-child) {
@@ -912,6 +872,27 @@ fieldset {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .advantages__item + .advantages__item {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+  .advantages__item + .advantages__item {
+    margin-left: 30px;
+  }
+}
+
 .activities {
   display: none;
   padding-top: 0;
@@ -945,6 +926,27 @@ fieldset {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__item + .team__item {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+  .team__item + .team__item {
+    margin-left: 30px;
   }
 }
 

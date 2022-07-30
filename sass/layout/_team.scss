@@ -1,8 +1,14 @@
 .team {
     background-color: var(--team-bcg-color);
 
-
     &__list {
-        display: flex;
-    }
+        @include for-tablet-up {
+            display: flex;
+        }
+    
+        @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }   
 }

@@ -1,6 +1,6 @@
 .work {
-    display: block;
-    list-style: normal;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
 
     transition-property: box-shadow;
@@ -16,6 +16,11 @@
         position: relative;
     
         overflow: hidden;
+    }
+
+    &__image {
+        // width: 370px;
+        // height: 294px;
     }
     
     &__overlay {
@@ -58,12 +63,13 @@
     }
     
     &__caption {
+        flex-grow: 1;
         padding: 20px 24px;
         border-left: 1px solid var(--portfolio-works-border-color);
         border-right: 1px solid var(--portfolio-works-border-color);
         border-bottom: 1px solid var(--portfolio-works-border-color);
     }
-    
+
     &__title {
         margin-bottom: 4px;
     
@@ -74,7 +80,7 @@
         color: var(--title-text-color);
     }
     
-    &__form {
+    &__type {
         margin-bottom: 0;
     
         font-weight: 400;

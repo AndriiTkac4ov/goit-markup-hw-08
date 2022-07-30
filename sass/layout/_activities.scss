@@ -2,7 +2,9 @@
     display: none;
     padding-top: 0;
 
-    @include for-desktop-up {display: block;}
+    @include for-desktop-up {
+        display: block;
+    }
 
     &__list {
         display: flex;

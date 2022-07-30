@@ -1,7 +1,33 @@
 .clients__list {
-    @extend %flex--centered;
+    @include for-mobile-up {
+        display: flex;
+    }
+    
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include for-desktop-up {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-.clients__item:not(:first-child) {
-    margin-left: 30px;
+.clients__item {
+    @include for-mobile-up {
+        flex-basis: calc((100% - 30px)/2);
+    }
+
+    @include for-tablet-up {
+        flex-basis: calc((100% - 30px*2)/3);
+    }
+
+    @include for-desktop-up {
+        flex-basis: calc((100% - 30px*5)/6);
+
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
 }

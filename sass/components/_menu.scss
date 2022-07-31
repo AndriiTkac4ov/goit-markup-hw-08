@@ -7,7 +7,17 @@
     border: none;
 
     background-color: transparent;
+    fill: currentColor;
     cursor: pointer;
+
+    transition-property: fill;
+    transition-timing-function: var(--timing-function);
+    transition-duration: var(--duration);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color)
+    }
 
     @include for-tablet-up {
         display: none;

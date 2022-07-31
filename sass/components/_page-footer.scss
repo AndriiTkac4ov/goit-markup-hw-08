@@ -1,18 +1,4 @@
 .page-footer {
-    display: flex;
-    align-items: baseline;
-
-
-    &__logo {
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    &__connect {
-        margin-left: 70px;
-        width: 206px;
-    }
-
     &__title {
         margin-bottom: 20px;
         font-size: 14px;
@@ -21,7 +7,36 @@
         color: var(--footer-white-text-color);
     }
 
-    &__subscribe {
-        margin-left: auto;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__address-nav {
+        margin-bottom: 60px;
+    }
+
+    &__connect {
+        margin-bottom: 60px;
+    }
+
+    @include for-tablet-up {}
+
+    @include for-desktop-up {
+        display: flex;
+        align-items: baseline;
+        
+        &__connect {
+            margin-left: 70px;
+            width: 206px;
+        }
+        
+        &__subscribe {
+            margin-left: auto;
+        }
     }
 }

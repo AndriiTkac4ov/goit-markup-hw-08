@@ -185,6 +185,23 @@ fieldset {
   .site-nav__item + .site-nav__item {
     margin-left: 50px;
   }
+  .site-nav__link::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-timing-function: var(--timing-function);
+            transition-timing-function: var(--timing-function);
+    -webkit-transition-duration: var(--duration);
+            transition-duration: var(--duration);
+  }
 }
 .site-nav__link {
   position: relative;
@@ -198,23 +215,6 @@ fieldset {
   color: var(--title-text-color);
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-timing-function: var(--timing-function);
-          transition-timing-function: var(--timing-function);
-  -webkit-transition-duration: var(--duration);
-          transition-duration: var(--duration);
-}
-.site-nav__link::after {
-  position: absolute;
-  content: "";
-  display: block;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
   -webkit-transition-timing-function: var(--timing-function);
           transition-timing-function: var(--timing-function);
   -webkit-transition-duration: var(--duration);
@@ -663,22 +663,6 @@ fieldset {
   background-color: var(--hero-bcg-color);
 }
 
-.page-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-.page-footer__logo {
-  display: block;
-  margin-bottom: 20px;
-}
-.page-footer__connect {
-  margin-left: 70px;
-  width: 206px;
-}
 .page-footer__title {
   margin-bottom: 20px;
   font-size: 14px;
@@ -686,8 +670,37 @@ fieldset {
   text-transform: uppercase;
   color: var(--footer-white-text-color);
 }
-.page-footer__subscribe {
-  margin-left: auto;
+@media screen and (max-width: 1199px) {
+  .page-footer {
+    text-align: center;
+  }
+}
+.page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.page-footer__address-nav {
+  margin-bottom: 60px;
+}
+.page-footer__connect {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .page-footer__connect {
+    margin-left: 70px;
+    width: 206px;
+  }
+  .page-footer__subscribe {
+    margin-left: auto;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -717,24 +730,16 @@ fieldset {
   color: var(--accent-color);
 }
 
-.subscribe-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .subscribe-form__input {
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   color: var(--footer-input-placeholder-color);
   background-color: transparent;
   border: 1px solid var(--footer-input-border-color);
   border-radius: 4px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   cursor: pointer;
   -webkit-transition-property: border;
@@ -749,11 +754,37 @@ fieldset {
   border: 1px solid var(--accent-color);
   color: var(--footer-input-color);
 }
+.subscribe-form__button {
+  margin-left: auto;
+  margin-right: auto;
+}
 .subscribe-form__icon {
   margin-left: 10px;
   width: 24px;
   height: 24px;
   fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-form__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe-form__input {
+    width: 358px;
+    margin-bottom: 0;
+  }
+  .subscribe-form__button {
+    margin-left: 12px;
+  }
 }
 
 .filter-button {
@@ -888,7 +919,17 @@ fieldset {
   margin: 0;
   border: none;
   background-color: transparent;
+  fill: currentColor;
   cursor: pointer;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+  -webkit-transition-duration: var(--duration);
+          transition-duration: var(--duration);
+}
+.button-menu:hover, .button-menu:focus {
+  fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .button-menu {

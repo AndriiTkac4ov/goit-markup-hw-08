@@ -1,9 +1,19 @@
 .site-nav {
-    display: flex;
+    @media screen and (max-width: 767px) {
+        font-size: 40px;
+        line-height: 1.175;
 
+        &__item + &__item {
+            margin-top: 32px;
+        }
+    }
 
-    &__item + &__item {
-        margin-left: 50px;
+    @include for-tablet-up {
+        display: flex;
+
+        &__item + &__item {
+            margin-left: 50px;
+        }
     }
 
     &__link {

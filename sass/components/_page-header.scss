@@ -1,17 +1,10 @@
 .page-header {
-    display: flex;
+    position: relative;
 
 
     &__navigation {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-}
-
-    &__site-nav {
-        margin-left: 93px;
-}
-
-    &__contacts {
-        margin-left: auto;
     }
 }

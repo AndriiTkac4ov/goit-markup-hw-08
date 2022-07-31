@@ -674,22 +674,37 @@ fieldset {
   .page-footer {
     text-align: center;
   }
+  .page-footer__address-nav {
+    margin-bottom: 60px;
+  }
+  .page-footer__connect {
+    margin-bottom: 60px;
+  }
 }
 .page-footer__logo {
   display: block;
   margin-bottom: 20px;
 }
-.page-footer__address-nav {
-  margin-bottom: 60px;
-}
-.page-footer__connect {
-  margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .page-footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 @media screen and (min-width: 1200px) {
   .page-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -697,9 +712,6 @@ fieldset {
   .page-footer__connect {
     margin-left: 70px;
     width: 206px;
-  }
-  .page-footer__subscribe {
-    margin-left: auto;
   }
 }
 

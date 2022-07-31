@@ -37,8 +37,6 @@
     &__link {
         position: relative;
         display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
 
         font-weight: 500;
         line-height: 1.14;
@@ -59,5 +57,12 @@
     &__link:hover,
     &__link:focus {
         color: var(--accent-color);
+    }
+
+    @include for-tablet-up {
+        &__link {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
 }

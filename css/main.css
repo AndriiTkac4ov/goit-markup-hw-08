@@ -137,6 +137,9 @@ fieldset {
   }
 }
 
+.page-header {
+  width: 100%;
+}
 .page-header__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1006,19 +1009,24 @@ fieldset {
     background-color: var(--primary-bcg-color);
     padding: 48px 40px;
   }
+  .menu-container__contacts {
+    margin-bottom: 64px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .menu-container.is-open {
   display: block;
 }
-
 @media screen and (max-width: 767px) {
   .menu-container.is-open {
     display: -webkit-box;
@@ -1033,10 +1041,13 @@ fieldset {
             justify-content: space-between;
   }
 }
+
 .menu-socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .menu-socials__item + .menu-socials__item {
   margin-left: 20px;

@@ -1,7 +1,7 @@
 .contacts {
     @include for-tablet-up {
         display: flex;
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
         justify-content: center;
         margin-left: 96px;
 

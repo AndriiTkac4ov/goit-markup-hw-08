@@ -6,6 +6,8 @@
     height: 100%;
     background-color: var(--hero-modal-backdrop-color);
 
+    overflow-y: scroll;
+
     opacity: 1;
     transition-property: opacity, visibility;
     transition-timing-function: var(--timing-function);

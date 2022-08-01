@@ -55,6 +55,12 @@
         background-color: var(--primary-bcg-color);
         padding: 48px 40px;
 
+        &.is-open {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         &__contacts {
             margin-bottom: 64px;
         }
@@ -63,16 +69,6 @@
     @include for-tablet-up {
         display: flex;
         align-items: center;
-    }
-}
-
-.menu-container.is-open {
-    display: block;
-
-    @media screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 }
 

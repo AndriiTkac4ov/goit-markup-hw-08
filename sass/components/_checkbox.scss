@@ -3,14 +3,19 @@
 
     &__label {
         position: relative;
-        display: flex;
-        align-items: center;
+        @extend %inline-flex--centered;
+        flex-wrap: wrap;
     
         margin-bottom: 0;
-        font-size: 14px;
-        line-height: 1.714;
+        font-size: 12px;
+        line-height: 1.167;
         letter-spacing: 0.03em;
         cursor: pointer;
+
+        @include for-desktop-up {
+            font-size: 14px;
+            line-height: 1.714;
+        }
     }
     
     &__icon {

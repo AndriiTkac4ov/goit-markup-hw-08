@@ -1,5 +1,5 @@
 .hero {
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
 
     background-color: var(--hero-bcg-color);
@@ -19,8 +19,10 @@
     }
 
     @include for-desktop-up {
+        padding: 200px 0;
+
         &__title {
-            width: 600px;
+            max-width: 600px;
             font-size: 44px;
             line-height: 1.36;
         }

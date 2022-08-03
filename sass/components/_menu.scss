@@ -1,9 +1,6 @@
 .button-menu {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    z-index: 3;
+    position: relative;
+    z-index: 2;
 
     display: inline-flex;
     width: 40px;
@@ -28,6 +25,13 @@
     @include for-tablet-up {
         display: none;
     }
+
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .button-menu .icon-close-menu {
@@ -46,7 +50,7 @@
     @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
-        z-index: 2;
+        z-index: 1;
         top: 0;
         left: 0;
         width: 100%;

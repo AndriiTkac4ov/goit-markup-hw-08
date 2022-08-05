@@ -295,12 +295,28 @@ fieldset {
   -webkit-transition-duration: var(--duration);
           transition-duration: var(--duration);
 }
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (max-width: 437px) {
+  .contacts__link-tel-number {
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 438px) and (max-width: 767px) {
+  .contacts__link-tel-number {
+    font-size: 34px;
+  }
 }
 @media screen and (max-width: 767px) {
   .contacts__item + .contacts__item {
@@ -310,7 +326,6 @@ fieldset {
     display: none;
   }
   .contacts__link-tel-number {
-    font-size: 34px;
     line-height: 1.176;
     color: var(--accent-color);
   }
@@ -751,14 +766,16 @@ fieldset {
   text-transform: uppercase;
   color: var(--footer-white-text-color);
 }
+@media screen and (max-width: 767px) {
+  .page-footer__address-nav {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .page-footer {
     text-align: center;
   }
-  .page-footer__address-nav {
-    margin-bottom: 60px;
-  }
-  .page-footer__connect {
+  .page-footer__info {
     margin-bottom: 60px;
   }
 }
@@ -1059,7 +1076,6 @@ fieldset {
     top: 0;
     left: 0;
     width: 100%;
-    height: 796px;
     background-color: var(--primary-bcg-color);
     padding: 48px 40px;
   }
@@ -1074,6 +1090,7 @@ fieldset {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    height: 100vh;
   }
   .menu-container__contacts {
     margin-bottom: 64px;
@@ -1123,6 +1140,31 @@ fieldset {
 @media screen and (min-width: 768px) {
   .menu-socials {
     display: none;
+  }
+}
+@media screen and (max-width: 437px) {
+  .menu-socials__item + .menu-socials__item {
+    margin-left: 8px;
+  }
+  .menu-socials__link {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    cursor: pointer;
+  }
+  .menu-socials__link-with-divide::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: -4px;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(33, 33, 33, 0.2);
   }
 }
 

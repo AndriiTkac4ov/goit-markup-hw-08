@@ -24,8 +24,6 @@
     &__link {
         display: flex;
         align-items: center;
-        // padding-top: 32px;
-        // padding-bottom: 32px;
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
@@ -35,6 +33,11 @@
         transition-property: color;
         transition-timing-function: var(--timing-function);
         transition-duration: var(--duration);
+
+        @include for-desktop-up {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
 
     &__link:hover,
@@ -48,6 +51,18 @@
         fill: currentColor;
     }
 
+    @media screen and (max-width: 437px) {
+        &__link-tel-number {
+            font-size: 27px;
+        }
+    }
+
+    @media screen and (min-width: 438px) and (max-width: 767px) {
+        &__link-tel-number {
+            font-size: 34px;
+        }
+    }
+
     @media screen and (max-width: 767px) {
         &__item + &__item {
             margin-top: 32px;
@@ -58,7 +73,6 @@
         }
 
         &__link-tel-number {
-            font-size: 34px;
             line-height: 1.176;
             color: var(--accent-color);
         }

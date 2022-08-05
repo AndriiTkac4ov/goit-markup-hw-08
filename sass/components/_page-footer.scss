@@ -7,14 +7,16 @@
         color: var(--footer-white-text-color);
     }
 
+    @media screen and (max-width: 767px) {
+        &__address-nav {
+                margin-bottom: 60px;
+        }
+    }
+
     @media screen and (max-width: 1199px) {
         text-align: center;
 
-        &__address-nav {
-            margin-bottom: 60px;
-        }
-        
-        &__connect {
+        &__info {
             margin-bottom: 60px;
         }
     }

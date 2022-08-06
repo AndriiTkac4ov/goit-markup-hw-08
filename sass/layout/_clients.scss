@@ -1,21 +1,19 @@
 .clients__list {
-    @include for-mobile-up {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
         display: flex;
-    }
-    
-    @media screen and (max-width: 1199px) {
         flex-wrap: wrap;
         gap: 30px;
     }
 
     @include for-desktop-up {
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 }
 
 .clients__item {
-    @include for-mobile-up {
+    @media screen and (max-width: 767px) {
         flex-basis: calc((100% - 30px)/2);
     }
 

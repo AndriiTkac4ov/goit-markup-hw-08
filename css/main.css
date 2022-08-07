@@ -1108,6 +1108,12 @@ fieldset {
   }
 }
 
+.menu-container.is-open + .button-menu {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+}
+
 .menu-socials {
   display: -webkit-box;
   display: -ms-flexbox;

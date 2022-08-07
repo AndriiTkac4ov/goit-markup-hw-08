@@ -78,6 +78,12 @@
     }
 }
 
+.menu-container.is-open + .button-menu {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+}
+
 .menu-socials {
     display: flex;
     flex-wrap: wrap;
